@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+  }
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+h2 {
+  margin-bottom: 10px;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.answer {
+  padding: 10px;
+  display: none;
+}
+.plus {
+  cursor: pointer;
+}
+.question input[type="checkbox"] {
+  display: none;
+}
+.question input[type="checkbox"]:checked +.answer {
+  display: block;
+}
